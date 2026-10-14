@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <title>A Jornada do Neymar</title>
+</head>
+<body>
+    <main>
+        <h1>⚽ A Jornada do Neymar 🐐</h1>
+        <p class="subtitulo">Do sonho à glória: você conhece a história do craque?</p>
+
+        <div class="progresso">
+            <div id="barra-progresso"></div>
+        </div>
+
+        <!-- PASSO 0 -->
+        <div class="passo ativo" id="passo-0">
+            <img src="1.png" alt="Neymar Jr." class="foto-neymar">
+            <h2>O começo de um sonho</h2>
+
+            <p>
+                Imagine que você está começando sua jornada no futebol.
+                Seu maior sonho é chegar ao topo, jogar em grandes estádios
+                e conquistar títulos, assim como Neymar.
+            </p>
+
+            <p>
+                Neymar nasceu em Mogi das Cruzes, São Paulo, em 5 de fevereiro
+                de 1992. Desde jovem, chamou a atenção por seu talento com a bola.
+            </p>
+
+            <p class="motivacao">
+                "Todo grande sonho começa com alguém que acredita que é possível."
+            </p>
+
+            <p><strong>Preparado para testar seus conhecimentos?</strong></p>
+
+            <button class="btn-proximo" data-proximo="1">
+                Começar o desafio 🚀
+            </button>
+        </div>
+
+        <!-- PASSO 1 -->
+        <div class="passo" id="passo-1">
+            <img src="2.png" alt="Neymar Jr." class="foto-neymar">
+            <span class="etapa">DESAFIO 1 DE 10</span>
+            <h2>Onde tudo começou?</h2>
+
+            <p>Em qual clube brasileiro Neymar ganhou destaque nacional ainda jovem?</p>
+
+            <button class="btn-proximo" data-proximo="2">Santos FC</button>
+            <button class="btn-proximo" data-proximo="11">Flamengo</button>
+            <button class="btn-proximo" data-proximo="11">Grêmio</button>
+        </div>
+
+        <!-- PASSO 2 -->
+        <div class="passo" id="passo-2">
+            <img src="3.png" alt="Neymar Jr." class="foto-neymar">
+            <span class="etapa">DESAFIO 2 DE 10</span>
+            <h2>O início da caminhada</h2>
+
+            <p>
+                Neymar chamou atenção no Santos por seus dribles,
+                criatividade e habilidade. O que podemos aprender com isso?
+            </p>
+
+            <button class="btn-proximo" data-proximo="3">
+                Treinar, aprender e desenvolver o próprio talento
+            </button>
+
+            <button class="btn-proximo" data-proximo="12">
+                Esperar o sucesso sem praticar
+            </button>
+
+            <button class="btn-proximo" data-proximo="12">
+                Desistir quando algo fica difícil
+            </button>
+        </div>
+
+        <!-- PASSO 3 -->
+        <div class="passo" id="passo-3">
+            <img src="2.png" alt="Neymar Jr." class="foto-neymar">
+            <span class="etapa">DESAFIO 3 DE 10</span>
+            <h2>O salto para a Europa</h2>
+
+            <p>
+                Em 2013, Neymar deixou o Santos para jogar em um gigante
+                europeu. Qual foi o clube que o contratou?
+            </p>
+
+            <button class="btn-proximo" data-proximo="4">Barcelona</button>
+            <button class="btn-proximo" data-proximo="13">Real Madrid</button>
+            <button class="btn-proximo" data-proximo="13">Manchester United</button>
+        </div>
+
+        <!-- PASSO 4 -->
+        <div class="passo" id="passo-4">
+            <span class="etapa">DESAFIO 4 DE 10</span>
+            <h2>O trio inesquecível</h2>
+
+            <p>
+                No Barcelona, Neymar formou um ataque histórico ao lado
+                de dois grandes jogadores. Quem eram seus companheiros
+                no famoso trio MSN?
+            </p>
+
+            <button class="btn-proximo" data-proximo="5">
+                Messi e Luis Suárez
+            </button>
+
+            <button class="btn-proximo" data-proximo="13">
+                Cristiano Ronaldo e Benzema
+            </button>
+
+            <button class="btn-proximo" data-proximo="13">
+                Mbappé e Haaland
+            </button>
+        </div>
+
+        <!-- PASSO 5 -->
+        <div class="passo" id="passo-5">
+            <img src="5.png" alt="Neymar Jr." class="foto-neymar">
+            <span class="etapa">DESAFIO 5 DE 10</span>
+            <h2>Uma conquista histórica 🇧🇷</h2>
+
+            <p>
+                Nos Jogos Olímpicos do Rio de Janeiro, em 2016,
+                a seleção brasileira masculina conquistou uma medalha
+                muito especial no futebol. Qual foi?
+            </p>
+
+            <button class="btn-proximo" data-proximo="6">Medalha de ouro</button>
+            <button class="btn-proximo" data-proximo="13">Medalha de prata</button>
+            <button class="btn-proximo" data-proximo="13">Medalha de bronze</button>
+        </div>
+
+        <!-- PASSO 6 -->
+        <div class="passo" id="passo-6">
+            <img src="6.png" alt="Neymar Jr." class="foto-neymar">
+            <span class="etapa">DESAFIO 6 DE 10</span>
+            <h2>Uma nova missão</h2>
+
+            <p>
+                Em 2017, Neymar foi para o Paris Saint-Germain.
+                Essa transferência marcou uma nova etapa de sua carreira.
+            </p>
+
+            <p>Qual atitude é importante quando começamos uma nova fase?</p>
+
+            <button class="btn-proximo" data-proximo="7">
+                Adaptar-se, aprender e continuar trabalhando
+            </button>
+
+            <button class="btn-proximo" data-proximo="12">
+                Achar que já sabemos tudo
+            </button>
+
+            <button class="btn-proximo" data-proximo="12">
+                Deixar de tentar diante das dificuldades
+            </button>
+        </div>
+
+        <!-- PASSO 7 -->
+        <div class="passo" id="passo-7">
+            <img src="5.png" alt="Neymar Jr." class="foto-neymar">
+            <span class="etapa">DESAFIO 7 DE 10</span>
+            <h2>O sonho da Seleção</h2>
+
+            <p>
+                Neymar representa o Brasil em competições internacionais
+                desde jovem. Qual é a cor tradicional da camisa principal
+                da Seleção Brasileira?
+            </p>
+
+            <button class="btn-proximo" data-proximo="8">Amarela</button>
+            <button class="btn-proximo" data-proximo="13">Preta</button>
+            <button class="btn-proximo" data-proximo="13">Roxa</button>
+        </div>
+
+        <!-- PASSO 8 -->
+        <div class="passo" id="passo-8">
+            <img src="6.png" alt="Neymar Jr." class="foto-neymar">
+            <span class="etapa">DESAFIO 8 DE 10</span>
+            <h2>Talento e dedicação</h2>
+
+            <p>
+                Neymar é conhecido por sua habilidade técnica e criatividade.
+                Mas qual combinação ajuda um atleta a evoluir?
+            </p>
+
+            <button class="btn-proximo" data-proximo="9">
+                Treino, disciplina, descanso e aprendizado
+            </button>
+
+            <button class="btn-proximo" data-proximo="12">
+                Apenas confiar na sorte
+            </button>
+
+            <button class="btn-proximo" data-proximo="12">
+                Nunca ouvir orientações
+            </button>
+        </div>
+
+        <!-- PASSO 9 -->
+        <div class="passo" id="passo-9">
+            <span class="etapa">DESAFIO 9 DE 10</span>
+            <h2>Uma lição para a vida</h2>
+
+            <p>
+                Ao longo de uma carreira, existem vitórias, derrotas,
+                críticas e momentos difíceis. Qual é uma boa maneira
+                de lidar com os obstáculos?
+            </p>
+
+            <button class="btn-proximo" data-proximo="10">
+                Aprender com os erros e continuar evoluindo
+            </button>
+
+            <button class="btn-proximo" data-proximo="12">
+                Nunca mais tentar depois de errar
+            </button>
+
+            <button class="btn-proximo" data-proximo="12">
+                Comparar sua jornada com a de todo mundo
+            </button>
+        </div>
+
+        <!-- PASSO 10 -->
+        <div class="passo" id="passo-10">
+             <img src="4.png" alt="Neymar Jr." class="foto-neymar">
+            <span class="etapa">DESAFIO 10 DE 10</span>
+            <h2>A mentalidade de campeão 🏆</h2>
+
+            <p>
+                Chegou a última pergunta! Se você tem um grande sonho,
+                como pode começar a transformá-lo em realidade?
+            </p>
+
+            <button class="btn-proximo" data-proximo="14">
+                Criar metas, praticar e persistir
+            </button>
+
+            <button class="btn-proximo" data-proximo="12">
+                Esperar que tudo aconteça sozinho
+            </button>
+
+            <button class="btn-proximo" data-proximo="12">
+                Desistir antes de começar
+            </button>
+        </div>
+
+        <!-- ERRO: RESPOSTA INCORRETA -->
+        <div class="passo" id="passo-11">
+            <div class="emoji-grande">🤔</div>
+            <h2>Ops! Não foi dessa vez.</h2>
+
+            <p>
+                O Santos foi o clube em que Neymar ganhou destaque
+                no futebol brasileiro.
+            </p>
+
+            <p class="motivacao">
+                Errar faz parte do aprendizado. O importante é entender
+                a resposta e tentar de novo!
+            </p>
+
+            <button class="btn-proximo" data-proximo="1">
+                Tentar novamente
+            </button>
+
+            <button class="btn-proximo" data-proximo="0">
+                Voltar ao início
+            </button>
+        </div>
+
+        <!-- ERRO: RESPOSTAS INCORRETAS -->
+        <div class="passo" id="passo-12">
+            <div class="emoji-grande">💪</div>
+            <h2>Levante a cabeça!</h2>
+
+            <p>
+                Nem toda escolha leva ao caminho certo. Isso também
+                faz parte de aprender e melhorar.
+            </p>
+
+            <p class="motivacao">
+                Não transforme um erro em motivo para desistir.
+                Use-o como oportunidade para crescer.
+            </p>
+
+            <button class="btn-proximo" data-proximo="1">
+                Recomeçar o desafio
+            </button>
+
+            <button class="btn-proximo" data-proximo="0">
+                Voltar ao início
+            </button>
+        </div>
+
+        <!-- RESPOSTA INCORRETA: PERGUNTAS DE HISTÓRIA -->
+        <div class="passo" id="passo-13">
+            <div class="emoji-grande">⚽</div>
+            <h2>Quase lá!</h2>
+
+            <p>
+                Essa resposta não está correta. Relembre os momentos
+                da carreira de Neymar e tente mais uma vez.
+            </p>
+
+            <p class="motivacao">
+                Até os melhores atletas precisam estudar, praticar
+                e aprender constantemente.
+            </p>
+
+            <button class="btn-proximo" data-proximo="3">
+                Tentar novamente
+            </button>
+
+            <button class="btn-proximo" data-proximo="0">
+                Voltar ao início
+            </button>
+        </div>
+
+        <!-- FINAL -->
+        <div class="passo" id="passo-14">
+             <img src="6.png" alt="Neymar Jr." class="foto-neymar">
+            <h2>VOCÊ É UM CAMPEÃO!</h2>
+
+            <p>
+                Parabéns! Você chegou ao final da Jornada do Neymar
+                e aprendeu sobre momentos importantes da carreira
+                do craque brasileiro.
+            </p>
+
+            <p>
+                Neymar começou a chamar atenção ainda jovem no Santos,
+                jogou no Barcelona e no Paris Saint-Germain e conquistou
+                a medalha de ouro olímpica com o Brasil em 2016.
+            </p>
+
+            <h3>🔥 Nunca se esqueça!</h3>
+
+            <p class="motivacao">
+                Você não precisa ser igual ao Neymar para construir
+                uma história incrível. Encontre seu próprio talento,
+                trabalhe pelos seus objetivos, aprenda com os erros
+                e continue avançando, um passo de cada vez.
+            </p>
+
+            <p>
+                Grandes sonhos precisam de ação. Comece hoje,
+                mesmo que seja com um pequeno passo!
+            </p>
+
+            <p class="final">
+                FIM DO DESAFIO — SUA JORNADA CONTINUA! ⚽🇧🇷
+            </p>
+
+            <button class="btn-proximo" data-proximo="0">
+                🔄 Jogar novamente
+            </button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

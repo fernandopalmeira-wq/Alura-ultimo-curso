@@ -1,0 +1,202 @@
+body {
+    background: linear-gradient(135deg, #062b16, #14532d, #071c12);
+    color: white;
+    font-family: "Oswald", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 25px 15px;
+    box-sizing: border-box;
+}
+
+main {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    color: #ffe45c;
+    font-size: clamp(2rem, 6vw, 3rem);
+    text-shadow: 2px 3px 8px #000;
+    margin-bottom: 8px;
+}
+
+h2 {
+    color: #ffe45c;
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #8ef59c;
+    font-size: 1.5rem;
+}
+
+.subtitulo {
+    color: #d8f5df;
+    font-size: 1.1rem;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.passo {
+    display: none;
+    animation: aparecer 0.4s ease;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+.passo p {
+    font-size: 1.12rem;
+    line-height: 1.8;
+    margin: 20px auto;
+}
+
+.etapa {
+    display: inline-block;
+    color: #ffe45c;
+    border: 1px solid #ffe45c;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.emoji-grande {
+    font-size: 5rem;
+    margin: 20px 0;
+    animation: flutuar 2s ease-in-out infinite;
+}
+
+.motivacao {
+    background: rgba(255, 228, 92, 0.09);
+    border-left: 4px solid #ffe45c;
+    border-radius: 8px;
+    padding: 18px;
+    color: #fff5b5;
+    text-align: left;
+}
+
+button {
+    display: inline-block;
+    background: #16803c;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    padding: 13px 22px;
+    margin: 8px;
+    border: 2px solid #69d889;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+button:hover {
+    background: #229e4e;
+    border-color: #ffe45c;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+button:focus-visible {
+    outline: 3px solid #ffe45c;
+    outline-offset: 4px;
+}
+
+.progresso {
+    height: 10px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    margin: 25px 0;
+    overflow: hidden;
+}
+
+#barra-progresso {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg, #16803c, #ffe45c);
+    border-radius: 20px;
+    transition: width 0.4s ease;
+}
+
+.final {
+    color: #ffe45c;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes flutuar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 18px 12px;
+    }
+
+    .passo p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    button {
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+        box-sizing: border-box;
+        padding: 14px;
+    }
+
+    .emoji-grande {
+        font-size: 4rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+.foto-neymar {
+    width: 250px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid #ffe45c;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    margin: 20px auto;
+    display: block;
+}
